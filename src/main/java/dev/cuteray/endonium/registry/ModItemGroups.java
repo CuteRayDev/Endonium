@@ -17,6 +17,11 @@ public class ModItemGroups {
         stacks.add(new ItemStack(ModItems.MELTEDDIAMOND));
         stacks.add(new ItemStack(ModItems.MELTEDENITE));
         stacks.add(new ItemStack(ModItems.ENDORY));
+        stacks.add(new ItemStack(ModItems.ENDONIUM_SWORD));
+        stacks.add(new ItemStack(ModItems.ENDONIUM_SHOVEL));
+        stacks.add(new ItemStack(ModItems.ENDONIUM_PICKAXE));
+        stacks.add(new ItemStack(ModItems.ENDONIUM_AXE));
+        stacks.add(new ItemStack(ModItems.ENDONIUM_HOE));
     }).build();
 
     public static void RegisterItemGroups(){

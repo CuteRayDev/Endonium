@@ -5,6 +5,11 @@
   "item.endonium.melteddiamond": "Melted Diamond",
   "item.endonium.meltedenite": "Melted Enite",
   "item.endonium.endory": "Endory",
+  "item.endonium.endonium_sword": "Endonium Sword",
+  "item.endonium.endonium_shovel": "Endonium Shovel",
+  "item.endonium.endonium_axe": "Endonium Axe",
+  "item.endonium.endonium_hoe": "Endonium Hoe",
+  "item.endonium.endonium_pickaxe": "Endonium Pickaxe",
 
   "itemGroup.endonium.modmenu": "Endonium Items"
 }
