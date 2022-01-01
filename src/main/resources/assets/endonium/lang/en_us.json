@@ -1,4 +1,10 @@
 {
+
   "item.endonium.endonium": "Endonium",
+  "item.endonium.enite": "Enite",
+  "item.endonium.melteddiamond": "Melted Diamond",
+  "item.endonium.meltedenite": "Melted Enite",
+  "item.endonium.endory": "Endory",
+
   "itemGroup.endonium.modmenu": "Endonium Items"
 }
