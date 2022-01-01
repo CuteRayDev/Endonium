@@ -7,17 +7,20 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 
-import static dev.cuteray.endonium.Endonium.MOD_ID;
-import static dev.cuteray.endonium.Endonium.MOD_PREFIX;
+import static dev.cuteray.endonium.Endonium.*;
 
 public class ModItemGroups {
 
     public final ItemGroup ENDONIUMMENU = FabricItemGroupBuilder.create(new Identifier(MOD_ID, "modmenu")).icon(() -> new ItemStack(ModItems.ENDONIUM)).appendItems(stacks -> {
         stacks.add(new ItemStack(ModItems.ENDONIUM));
+        stacks.add(new ItemStack(ModItems.ENITE));
+        stacks.add(new ItemStack(ModItems.MELTEDDIAMOND));
+        stacks.add(new ItemStack(ModItems.MELTEDENITE));
+        stacks.add(new ItemStack(ModItems.ENDORY));
     }).build();
 
     public static void RegisterItemGroups(){
         new ModItemGroups();
-        System.out.println(MOD_PREFIX + " Item Group Loaded.");
+        SendDebugMessage("Item Group Loaded.");
     }
 }

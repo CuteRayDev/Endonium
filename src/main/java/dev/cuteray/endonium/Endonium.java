@@ -16,9 +16,14 @@ public class Endonium implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		System.out.println(MOD_PREFIX + " Mod Initializing Load...");
+		SendDebugMessage("Mod Initializing Load...");
 		ModItems.RegisterItems();
 		ModItemGroups.RegisterItemGroups();
-		System.out.println(MOD_PREFIX + " Mod Successfully Loaded!");
+		SendDebugMessage("Mod Successfully Loaded!");
+	}
+
+	public static void SendDebugMessage(String text)
+	{
+	Endonium.LOGGER.info(MOD_PREFIX + " " + text);
 	}
 }
