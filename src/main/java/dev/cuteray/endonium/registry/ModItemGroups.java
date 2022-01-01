@@ -22,6 +22,10 @@ public class ModItemGroups {
         stacks.add(new ItemStack(ModItems.ENDONIUM_PICKAXE));
         stacks.add(new ItemStack(ModItems.ENDONIUM_AXE));
         stacks.add(new ItemStack(ModItems.ENDONIUM_HOE));
+        stacks.add(new ItemStack(ModItems.ENDONIUM_HELMET));
+        stacks.add(new ItemStack(ModItems.ENDONIUM_CHESTPLATE));
+        stacks.add(new ItemStack(ModItems.ENDONIUM_LEGGINGS));
+        stacks.add(new ItemStack(ModItems.ENDONIUM_BOOTS));
     }).build();
 
     public static void RegisterItemGroups(){

@@ -10,6 +10,10 @@
   "item.endonium.endonium_axe": "Endonium Axe",
   "item.endonium.endonium_hoe": "Endonium Hoe",
   "item.endonium.endonium_pickaxe": "Endonium Pickaxe",
+  "item.endonium.endonium_helmet": "Endonium Helmet",
+  "item.endonium.endonium_chestplate": "Endonium Chestplate",
+  "item.endonium.endonium_leggings": "Endonium Leggings",
+  "item.endonium.endonium_boots": "Endonium Boots",
 
   "itemGroup.endonium.modmenu": "Endonium Items"
 }
