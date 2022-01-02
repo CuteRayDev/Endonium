@@ -24,8 +24,8 @@ import net.minecraft.world.gen.feature.PlacedFeature;
 
 public class ModWorldGen {
 
-    public static ConfiguredFeature<?, ?> ENITE_ORE_FEATURE = Feature.ORE.configure(new OreFeatureConfig(new BlockMatchRuleTest(Blocks.END_STONE),ModBlocks.ENITE_ORE.getDefaultState(), 3));
-    public static PlacedFeature ENITE_ORE_PLACED_FEATURE = ENITE_ORE_FEATURE.withPlacement(CountPlacementModifier.of(5), SquarePlacementModifier.of(), HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64)));
+    public static ConfiguredFeature<?, ?> ENITE_ORE_FEATURE = Feature.ORE.configure(new OreFeatureConfig(new BlockMatchRuleTest(Blocks.END_STONE),ModBlocks.ENITE_ORE.getDefaultState(), 4));
+    public static PlacedFeature ENITE_ORE_PLACED_FEATURE = ENITE_ORE_FEATURE.withPlacement(CountPlacementModifier.of(7), SquarePlacementModifier.of(), HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(40)));
 
     public static void RegisterWorldGen()
     {
