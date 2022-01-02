@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "endonium:endonium"
+    },
+    "title": "Dimensional Property",
+    "description": "Obtain an Endonium",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "endonium:enite",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "endonium:endonium"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

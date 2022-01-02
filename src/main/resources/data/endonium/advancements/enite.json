@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "endonium:enite"
+    },
+    "title": "Ore Under Pressure",
+    "description": "Obtain an Enite",
+    "background": "endonium:textures/blocks/enite_ore.png",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "endonium:enite"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
