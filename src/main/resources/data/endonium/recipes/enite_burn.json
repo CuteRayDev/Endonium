@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "endonium:enite_ore"
+    },
+    "result": "endonium:enite",
+    "experience": 0.1,
+    "cookingtime": 200
+}

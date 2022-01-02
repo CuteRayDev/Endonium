@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        " N ",
+        "E E"
+    ],
+    "key": {
+        "#": {
+            "item": "endonium:meltedenite"
+        },
+        "N": {
+            "item": "minecraft:netherite_scrap"
+        },
+        "E": {
+            "item": "endonium:melteddiamond"
+        }
+    },
+    "result": {
+        "item": "endonium:endory",
+        "count": 1
+    }
+}
