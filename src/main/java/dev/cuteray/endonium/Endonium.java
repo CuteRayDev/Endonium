@@ -1,5 +1,6 @@
 package dev.cuteray.endonium;
 
+import dev.cuteray.endonium.registry.ModBlocks;
 import dev.cuteray.endonium.registry.ModItemGroups;
 import dev.cuteray.endonium.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -18,6 +19,7 @@ public class Endonium implements ModInitializer {
 	public void onInitialize() {
 		SendDebugMessage("Mod Initializing Load...");
 		ModItems.RegisterItems();
+		ModBlocks.RegisterBlocks();
 		ModItemGroups.RegisterItemGroups();
 		SendDebugMessage("Mod Successfully Loaded!");
 	}

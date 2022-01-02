@@ -24,17 +24,19 @@ public class ModItems {
     public static Item MELTEDENITE = new Item(new Item.Settings().group(ItemGroup.MATERIALS).food(new FoodComponent.Builder().statusEffect(new StatusEffectInstance(StatusEffects.POISON, 9999),225).hunger(0).saturationModifier(0f).alwaysEdible().build()));
     public static Item ENDORY = new Item(new Item.Settings().group(ItemGroup.MATERIALS).fireproof());
 
-    public static Item ENDONIUM_SWORD = new SwordItem(NewToolMaterial.ENDONIUM, 6, -2.4f, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
-    public static Item ENDONIUM_AXE = new CustomAxe(NewToolMaterial.ENDONIUM,7, -3f, new Item.Settings().group(ItemGroup.TOOLS).fireproof());
-    public static Item ENDONIUM_PICKAXE = new CustomPickaxe(NewToolMaterial.ENDONIUM,3, -2.8f, new Item.Settings().group(ItemGroup.TOOLS).fireproof());
-    public static Item ENDONIUM_SHOVEL = new ShovelItem(NewToolMaterial.ENDONIUM,3.5f, -3f, new Item.Settings().group(ItemGroup.TOOLS).fireproof());
-    public static Item ENDONIUM_HOE = new CustomHoe(NewToolMaterial.ENDONIUM,-3, 0f, new Item.Settings().group(ItemGroup.TOOLS).fireproof());
+    public static Item ENDONIUM_SWORD = new SwordItem(NewToolMaterial.ENDONIUM, 4, -2.4f, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
+    public static Item ENDONIUM_AXE = new CustomAxe(NewToolMaterial.ENDONIUM,5, -3f, new Item.Settings().group(ItemGroup.TOOLS).fireproof());
+    public static Item ENDONIUM_PICKAXE = new CustomPickaxe(NewToolMaterial.ENDONIUM,2, -2.8f, new Item.Settings().group(ItemGroup.TOOLS).fireproof());
+    public static Item ENDONIUM_SHOVEL = new ShovelItem(NewToolMaterial.ENDONIUM,1.5f, -3f, new Item.Settings().group(ItemGroup.TOOLS).fireproof());
+    public static Item ENDONIUM_HOE = new CustomHoe(NewToolMaterial.ENDONIUM,-5, 0f, new Item.Settings().group(ItemGroup.TOOLS).fireproof());
 
     public static Item ENDONIUM_HELMET = new ArmorItem(NewArmorMaterial.ENDONIUM, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
     public static Item ENDONIUM_CHESTPLATE = new ArmorItem(NewArmorMaterial.ENDONIUM, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
     public static Item ENDONIUM_LEGGINGS = new ArmorItem(NewArmorMaterial.ENDONIUM, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
     public static Item ENDONIUM_BOOTS = new ArmorItem(NewArmorMaterial.ENDONIUM, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
 
+    public static Item ENITE_ORE = new BlockItem(ModBlocks.ENITE_ORE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+    public static Item ENDONIUM_BLOCK = new BlockItem(ModBlocks.ENDONIUM_BLOCK, new Item.Settings().group(ItemGroup.DECORATIONS).fireproof());
 
     public static void RegisterItems(){
         Registry.register(Registry.ITEM, new Identifier(Endonium.MOD_ID, "endonium"), ENDONIUM);
@@ -51,6 +53,8 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Endonium.MOD_ID, "endonium_chestplate"), ENDONIUM_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(Endonium.MOD_ID, "endonium_leggings"), ENDONIUM_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(Endonium.MOD_ID, "endonium_boots"), ENDONIUM_BOOTS);
+        Registry.register(Registry.ITEM, new Identifier(Endonium.MOD_ID, "enite_ore"), ENITE_ORE);
+        Registry.register(Registry.ITEM, new Identifier(Endonium.MOD_ID, "endonium_block"), ENDONIUM_BLOCK);
         SendDebugMessage("Items Loaded.");
     }
 }

@@ -26,6 +26,8 @@ public class ModItemGroups {
         stacks.add(new ItemStack(ModItems.ENDONIUM_CHESTPLATE));
         stacks.add(new ItemStack(ModItems.ENDONIUM_LEGGINGS));
         stacks.add(new ItemStack(ModItems.ENDONIUM_BOOTS));
+        stacks.add(new ItemStack(ModItems.ENITE_ORE));
+        stacks.add(new ItemStack(ModItems.ENDONIUM_BLOCK));
     }).build();
 
     public static void RegisterItemGroups(){
