@@ -3,6 +3,7 @@ package dev.cuteray.endonium;
 import dev.cuteray.endonium.registry.ModBlocks;
 import dev.cuteray.endonium.registry.ModItemGroups;
 import dev.cuteray.endonium.registry.ModItems;
+import dev.cuteray.endonium.registry.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -21,6 +22,7 @@ public class Endonium implements ModInitializer {
 		ModItems.RegisterItems();
 		ModBlocks.RegisterBlocks();
 		ModItemGroups.RegisterItemGroups();
+		ModWorldGen.RegisterWorldGen();
 		SendDebugMessage("Mod Successfully Loaded!");
 	}
 
