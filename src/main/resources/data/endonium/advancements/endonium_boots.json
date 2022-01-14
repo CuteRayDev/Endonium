@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "endonium:endonium_boots"
+    },
+    "title": "Expensive Sneakers",
+    "description": "Obtain an Endonium Boots",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "endonium:endonium",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "endonium:endonium_boots"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
