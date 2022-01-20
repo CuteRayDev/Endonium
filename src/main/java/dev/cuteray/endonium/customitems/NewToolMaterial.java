@@ -1,5 +1,6 @@
 package dev.cuteray.endonium.customitems;
 
+import dev.cuteray.endonium.config.ModConfig;
 import dev.cuteray.endonium.registry.ModItems;
 import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.Items;
@@ -12,7 +13,7 @@ import java.util.function.Supplier;
 
 public enum NewToolMaterial implements ToolMaterial {
 
-    ENDONIUM(MiningLevels.NETHERITE, 2561, 10.0f, 5.0f, 20, () -> Ingredient.ofItems(ModItems.ENDONIUM));
+    ENDONIUM(MiningLevels.NETHERITE, ModConfig.endoniumToolsDurability, ModConfig.endoniumToolsMiningSpeed, 5.0f, ModConfig.endoniumToolsEnchantibility, () -> Ingredient.ofItems(ModItems.ENDONIUM));
 
     private final int miningLevel;
     private final int itemDurability;
