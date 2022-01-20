@@ -2,6 +2,8 @@ package dev.cuteray.endonium.registry;
 
 import dev.cuteray.endonium.Endonium;
 import dev.cuteray.endonium.config.ModConfig;
+import dev.cuteray.endonium.customitems.EndoniumArmours;
+import dev.cuteray.endonium.customitems.EndoniumTools;
 import dev.cuteray.endonium.customitems.NewArmorMaterial;
 import dev.cuteray.endonium.customitems.NewToolMaterial;
 import dev.cuteray.endonium.customitems.tools.CustomAxe;
@@ -19,22 +21,25 @@ import static dev.cuteray.endonium.Endonium.SendDebugMessage;
 
 public class ModItems {
 
+    static EndoniumTools endoniumMaterial = new EndoniumTools();
+    static EndoniumArmours endoniumArmours = new EndoniumArmours();
+
     public static Item ENDONIUM = new Item(new Item.Settings().group(ItemGroup.MATERIALS).fireproof());
     public static Item ENITE = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
     public static Item MELTEDDIAMOND = new Item(new Item.Settings().group(ItemGroup.MATERIALS).food(new FoodComponent.Builder().statusEffect(new StatusEffectInstance(StatusEffects.POISON, 9999),225).hunger(0).saturationModifier(0f).alwaysEdible().build()));
     public static Item MELTEDENITE = new Item(new Item.Settings().group(ItemGroup.MATERIALS).food(new FoodComponent.Builder().statusEffect(new StatusEffectInstance(StatusEffects.POISON, 9999),225).hunger(0).saturationModifier(0f).alwaysEdible().build()));
     public static Item ENDORY = new Item(new Item.Settings().group(ItemGroup.MATERIALS).fireproof());
 
-    public static Item ENDONIUM_SWORD = new SwordItem(NewToolMaterial.ENDONIUM, ModConfig.endoniumSwordAtk, ModConfig.endoniumSwordAtkSpeed, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
-    public static Item ENDONIUM_AXE = new CustomAxe(NewToolMaterial.ENDONIUM,ModConfig.endoniumAxeAtk, ModConfig.endoniumAxeAtkSpeed, new Item.Settings().group(ItemGroup.TOOLS).fireproof());
-    public static Item ENDONIUM_PICKAXE = new CustomPickaxe(NewToolMaterial.ENDONIUM,ModConfig.endoniumPickaxeAtk, ModConfig.endoniumPickaxeAtkSpeed, new Item.Settings().group(ItemGroup.TOOLS).fireproof());
-    public static Item ENDONIUM_SHOVEL = new ShovelItem(NewToolMaterial.ENDONIUM,ModConfig.endoniumShovelAtk, ModConfig.endoniumShovelAtkSpeed, new Item.Settings().group(ItemGroup.TOOLS).fireproof());
-    public static Item ENDONIUM_HOE = new CustomHoe(NewToolMaterial.ENDONIUM,ModConfig.endoniumHoeAtk, ModConfig.endoniumHoeAtkSpeed, new Item.Settings().group(ItemGroup.TOOLS).fireproof());
+    public static Item ENDONIUM_SWORD = new SwordItem(endoniumMaterial, ModConfig.endoniumSwordAtk, ModConfig.endoniumSwordAtkSpeed, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
+    public static Item ENDONIUM_AXE = new CustomAxe(endoniumMaterial,ModConfig.endoniumAxeAtk, ModConfig.endoniumAxeAtkSpeed, new Item.Settings().group(ItemGroup.TOOLS).fireproof());
+    public static Item ENDONIUM_PICKAXE = new CustomPickaxe(endoniumMaterial,ModConfig.endoniumPickaxeAtk, ModConfig.endoniumPickaxeAtkSpeed, new Item.Settings().group(ItemGroup.TOOLS).fireproof());
+    public static Item ENDONIUM_SHOVEL = new ShovelItem(endoniumMaterial,ModConfig.endoniumShovelAtk, ModConfig.endoniumShovelAtkSpeed, new Item.Settings().group(ItemGroup.TOOLS).fireproof());
+    public static Item ENDONIUM_HOE = new CustomHoe(endoniumMaterial,ModConfig.endoniumHoeAtk, ModConfig.endoniumHoeAtkSpeed, new Item.Settings().group(ItemGroup.TOOLS).fireproof());
 
-    public static Item ENDONIUM_HELMET = new ArmorItem(NewArmorMaterial.ENDONIUM, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
-    public static Item ENDONIUM_CHESTPLATE = new ArmorItem(NewArmorMaterial.ENDONIUM, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
-    public static Item ENDONIUM_LEGGINGS = new ArmorItem(NewArmorMaterial.ENDONIUM, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
-    public static Item ENDONIUM_BOOTS = new ArmorItem(NewArmorMaterial.ENDONIUM, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
+    public static Item ENDONIUM_HELMET = new ArmorItem(endoniumArmours, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
+    public static Item ENDONIUM_CHESTPLATE = new ArmorItem(endoniumArmours, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
+    public static Item ENDONIUM_LEGGINGS = new ArmorItem(endoniumArmours, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
+    public static Item ENDONIUM_BOOTS = new ArmorItem(endoniumArmours, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
 
     public static Item ENITE_ORE = new BlockItem(ModBlocks.ENITE_ORE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
     public static Item ENDONIUM_BLOCK = new BlockItem(ModBlocks.ENDONIUM_BLOCK, new Item.Settings().group(ItemGroup.DECORATIONS).fireproof());
