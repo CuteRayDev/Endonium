@@ -1,5 +1,6 @@
 package dev.cuteray.endonium;
 
+import dev.cuteray.endonium.config.ModConfig;
 import dev.cuteray.endonium.registry.ModBlocks;
 import dev.cuteray.endonium.registry.ModItemGroups;
 import dev.cuteray.endonium.registry.ModItems;
@@ -19,6 +20,7 @@ public class Endonium implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		SendDebugMessage("Mod Initializing Load...");
+		ModConfig.registerConfigs();
 		ModItems.RegisterItems();
 		ModBlocks.RegisterBlocks();
 		ModItemGroups.RegisterItemGroups();

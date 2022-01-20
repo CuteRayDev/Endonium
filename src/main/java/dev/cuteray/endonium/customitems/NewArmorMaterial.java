@@ -1,5 +1,7 @@
 package dev.cuteray.endonium.customitems;
 
+import dev.cuteray.endonium.config.ModConfig;
+import dev.cuteray.endonium.registry.ModItems;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Items;
@@ -12,7 +14,7 @@ import java.util.function.Supplier;
 
 public enum NewArmorMaterial implements ArmorMaterial {
 
-    ENDONIUM("endonium", 41, new int[]{4, 7, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3.0f, 0.1f, () -> Ingredient.ofItems(Items.NETHERITE_INGOT));
+    ENDONIUM("endonium", ModConfig.endoniumArmourDurabilityModifier, new int[]{ModConfig.endoniumBootsProtection, ModConfig.endoniumLeggingsProtection, ModConfig.endoniumChestplateProtection, ModConfig.endoniumHelmetProtection}, ModConfig.endoniumArmourEnchantability, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, ModConfig.endoniumArmourToughness, ModConfig.endoniumArmourKnockbackResistance, () -> Ingredient.ofItems(ModItems.ENDONIUM));
 
     private static final int[] BASE_DURABILITY;
     private final String name;
