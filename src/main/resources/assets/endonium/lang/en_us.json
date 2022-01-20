@@ -16,6 +16,9 @@
   "item.endonium.endonium_boots": "Endonium Boots",
   "block.endonium.enite_ore": "Enite Ore",
   "block.endonium.endonium_block": "Endonium Block",
+  "item.endonium.enite_finder": "Enite Finder",
+  "tooltip.enite_finder.1" : "Right click to find if there is",
+  "tooltip.enite_finder.2" : "Enite ore directly above or under you!",
 
   "itemGroup.endonium.modmenu": "Endonium Items"
 }

@@ -9,6 +9,7 @@ import dev.cuteray.endonium.customitems.NewToolMaterial;
 import dev.cuteray.endonium.customitems.tools.CustomAxe;
 import dev.cuteray.endonium.customitems.tools.CustomHoe;
 import dev.cuteray.endonium.customitems.tools.CustomPickaxe;
+import dev.cuteray.endonium.customitems.tools.EniteFinder;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -29,6 +30,8 @@ public class ModItems {
     public static Item MELTEDDIAMOND = new Item(new Item.Settings().group(ItemGroup.MATERIALS).food(new FoodComponent.Builder().statusEffect(new StatusEffectInstance(StatusEffects.POISON, 9999),225).hunger(0).saturationModifier(0f).alwaysEdible().build()));
     public static Item MELTEDENITE = new Item(new Item.Settings().group(ItemGroup.MATERIALS).food(new FoodComponent.Builder().statusEffect(new StatusEffectInstance(StatusEffects.POISON, 9999),225).hunger(0).saturationModifier(0f).alwaysEdible().build()));
     public static Item ENDORY = new Item(new Item.Settings().group(ItemGroup.MATERIALS).fireproof());
+
+    public static Item ENITE_FINDER = new EniteFinder(new Item.Settings().group(ItemGroup.TOOLS));
 
     public static Item ENDONIUM_SWORD = new SwordItem(endoniumMaterial, ModConfig.endoniumSwordAtk, ModConfig.endoniumSwordAtkSpeed, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
     public static Item ENDONIUM_AXE = new CustomAxe(endoniumMaterial,ModConfig.endoniumAxeAtk, ModConfig.endoniumAxeAtkSpeed, new Item.Settings().group(ItemGroup.TOOLS).fireproof());
@@ -61,6 +64,7 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(Endonium.MOD_ID, "endonium_boots"), ENDONIUM_BOOTS);
         Registry.register(Registry.ITEM, new Identifier(Endonium.MOD_ID, "enite_ore"), ENITE_ORE);
         Registry.register(Registry.ITEM, new Identifier(Endonium.MOD_ID, "endonium_block"), ENDONIUM_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(Endonium.MOD_ID, "enite_finder"), ENITE_FINDER);
         SendDebugMessage("Items Loaded.");
     }
 }

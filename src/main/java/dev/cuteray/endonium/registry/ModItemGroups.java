@@ -25,7 +25,8 @@ public class ModItemGroups {
         stacks.add(new ItemStack(ModItems.ENDONIUM_PICKAXE));
         stacks.add(new ItemStack(ModItems.ENDONIUM_AXE));
         stacks.add(new ItemStack(ModItems.ENDONIUM_HOE));
-        for (int i = 0; i < 4; i++){
+        stacks.add(new ItemStack(ModItems.ENITE_FINDER));
+        for (int i = 0; i < 3; i++){
             stacks.add(new ItemStack(Items.AIR));
         }
         stacks.add(new ItemStack(ModItems.ENDONIUM_HELMET));
