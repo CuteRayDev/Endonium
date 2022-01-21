@@ -22,8 +22,8 @@ import static dev.cuteray.endonium.Endonium.SendDebugMessage;
 
 public class ModItems {
 
-    static EndoniumTools endoniumMaterial = new EndoniumTools();
-    static EndoniumArmours endoniumArmours = new EndoniumArmours();
+    public static EndoniumTools endoniumMaterial = new EndoniumTools();
+    public static EndoniumArmours endoniumArmours = new EndoniumArmours();
 
     public static Item ENDONIUM = new Item(new Item.Settings().group(ItemGroup.MATERIALS).fireproof());
     public static Item ENITE = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
